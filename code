@@ -1,0 +1,192 @@
+# IRMA THE FORTUNE TELLER
+# A completely unreliable destiny simulator.
+#
+# DISCLAIMER:
+# This project is purely for fun and entertainment.
+# Irma is NOT a real fortune teller, and these predictions
+# have absolutely no scientific basis.
+#
+# Do not make life decisions based on what a random Python
+# program tells you. Especially if it asks for $500.
+#
+# Made with Python, randomness, and questionable life choices.
+
+
+import random
+import time
+
+
+def prediction1():
+    print(
+        f"\nHmm... fascinating... "
+        f"Your destiny is clouded, but I can clearly see "
+        f"{random.choice(personnage)} {random.choice(Lieux)}."
+    )
+
+    print(
+        f"The stars strongly advise you to {random.choice(Conseils)}."
+    )
+
+    print(
+        f"And should you ever decide to {random.choice(action)}, "
+        f"please remember: destiny favors the foolish!"
+    )
+
+    print("\n...")
+    time.sleep(3)
+
+    print("Ah, one last thing before you leave...")
+    time.sleep(2)
+
+    print("That will be $500.")
+    time.sleep(1)
+
+    print("Cash only. The universe doesn't accept credit cards.")
+
+
+def prediction2():
+    print(
+        f"\nWonderful! Your future looks absolutely magnificent, "
+        f"{prenom}!"
+    )
+
+    time.sleep(2)
+
+    print(
+        "I see wealth, glory, and unimaginable success..."
+    )
+
+    time.sleep(2)
+
+    print(
+        "Wait... no. My crystal ball is buffering."
+    )
+
+    time.sleep(2)
+
+    print(
+        "Ah, there it is! You are destined to become "
+        "the world's leading expert in absolutely nothing."
+    )
+
+    time.sleep(2)
+
+    print(
+        "Congratulations! Your future is brighter than my electricity bill."
+    )
+
+    time.sleep(2)
+
+    print("\nThat will be $500.")
+    print("No refunds. The universe has a strict policy.")
+
+
+# Randomly choose which prediction the user will receive
+liste_fonction = [prediction1, prediction2]
+fonction_choix = random.choice(liste_fonction)
+
+
+# Possible ingredients for the predictions
+Characters = [
+    "your future spouse",
+    "your long-lost uncle",
+    "your best friend",
+    "a suspicious-looking pigeon",
+    "a retired magician"
+]
+
+Places = [
+    "at the local fair",
+    "in a questionable shopping mall",
+    "at your neighbor's house",
+    "somewhere in Algeria",
+    "inside a suspiciously expensive restaurant"
+]
+
+Advices = [
+    "spend all your money on rubber ducks",
+    "walk backwards for the next three days",
+    "sleep upside down like a confused bat",
+    "never trust anyone who cuts their spaghetti",
+    "challenge a pigeon to a staring contest"
+]
+
+actions = [
+    "save an elderly lady",
+    "discover the cure for cancer",
+    "accidentally become homeless",
+    "become the ruler of a small island",
+    "teach philosophy to a group of confused chickens"
+]
+
+
+# Welcome message
+print("=" * 55)
+print("       WELCOME TO IRMA'S FORTUNE TELLING")
+print("=" * 55)
+
+print(
+    "\nGreetings, unfortunate visitor!"
+    "\nI am Irma, the greatest fortune teller in this building."
+    "\nMy predictions are 100% accurate..."
+    "\nAccording to me, at least."
+)
+
+input("\nPress ENTER when you are ready to discover your destiny...")
+
+
+# Collect information about the visitor
+prenom = input("\nFirst, tell me your name, dear stranger: ")
+
+ask = input(
+    f"\nAh, {prenom}... what a mysterious name."
+    "\nWould you like a completely reliable prediction? (Yes/No): "
+)
+
+if ask.lower() == "yes":
+
+    couleurs = input(
+        f"\nExcellent, {prenom}!"
+        "\nTell me, what is your favorite color? "
+    )
+
+    animal = input(
+        "\nFascinating..."
+        "\nAnd what is your favorite animal? "
+    )
+
+    print("\nVery well. Let me consult the ancient forces...")
+    time.sleep(2)
+
+    print("Reading your aura...")
+    time.sleep(2)
+
+    print("Consulting the stars...")
+    time.sleep(2)
+
+    print("Ignoring several alarming signs...")
+    time.sleep(2)
+
+    print("\n🔮 YOUR DESTINY HAS BEEN REVEALED 🔮")
+
+    fonction_choix()
+
+else:
+    print(
+        "\nWhat a shame!"
+        "\nThe universe was ready to reveal its secrets to you..."
+        "\nBut apparently, you are not ready for greatness."
+    )
+
+    time.sleep(1)
+
+    print(
+        "\nLeave, then! I have pigeons to predict the future for."
+    )
+
+
+print("\nThank you for visiting Irma's Fortune Telling!")
+print("Remember: your future is uncertain, but my prices are not.")
+print("This project is for entertainment purposes only.")
+
+    
